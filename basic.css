@@ -1,0 +1,46 @@
+@import "./components/answer/answer.css";
+@import "./components/button/button.css";
+@import "./components/card/card.css";
+@import "./components/header/header.css";
+@import "./components/footer/footer.css";
+@import "./components/icon/icon.css";
+@import "./components/question/question.css";
+@import "./components/tag/tag.css";
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	font-size: 62.5%;
+	text-align: center;
+}
+
+main {
+	border-right: 3px solid black;
+	border-left: 3px solid black;
+}
+
+ul {
+	list-style: none;
+}
+
+.container {
+	width: inherit;
+	height: auto;
+	display: flex;
+	justify-content: center;
+}
+
+.quizapp {
+	width: inherit;
+	max-width: 500px;
+	display: flex;
+	flex-direction: column;
+	background-color: azure;
+	font-size: 1.1rem;
+}

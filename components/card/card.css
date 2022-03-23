@@ -1,0 +1,38 @@
+.card {
+	position: relative;
+	margin: 2rem;
+	padding: 1rem;
+	border: 1px solid black;
+	border-radius: 0.6rem;
+	background-color: white;
+}
+
+.card__badge {
+	width: 2.4rem;
+	height: 2.4rem;
+	position: absolute;
+	top: -0.5rem;
+	right: 0.2rem;
+}
+
+.card__title {
+	margin-bottom: 0.5rem;
+	font-size: 1.3rem;
+	font-style: italic;
+	text-align: left;
+}
+
+.card__text {
+	margin: 1rem;
+}
+
+.card__text--answer {
+	font-style: italic;
+}
+
+.card__footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 1rem;
+}

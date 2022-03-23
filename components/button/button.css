@@ -1,0 +1,22 @@
+.btn {
+	background-image: linear-gradient(
+		rgb(126, 126, 126),
+		white,
+		white,
+		rgb(126, 126, 126)
+	);
+	padding: 0.3rem;
+	border: 1px solid rgb(126, 126, 126);
+	border-radius: 0.2rem;
+	color: black;
+}
+
+.btn:hover {
+	font-weight: 700;
+	background-image: linear-gradient(
+		rgb(94, 94, 94),
+		white,
+		white,
+		rgb(94, 94, 94)
+	);
+}
