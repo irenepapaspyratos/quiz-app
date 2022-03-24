@@ -20,3 +20,7 @@
 		rgb(94, 94, 94)
 	);
 }
+
+.btn--form {
+	align-self: flex-end;
+}
