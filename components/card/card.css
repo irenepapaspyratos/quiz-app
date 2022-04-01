@@ -10,10 +10,10 @@
 		"Lucida Sans", Arial, sans-serif;
 }
 
-.card__badge {
+.card__bookmark {
+	position: absolute;
 	width: 2.4rem;
 	height: 2.4rem;
-	position: absolute;
 	top: -0.5rem;
 	right: 0.2rem;
 }
@@ -38,8 +38,4 @@
 	flex-wrap: wrap;
 	justify-content: center;
 	gap: 1rem;
-}
-
-.hide {
-	display: none;
 }

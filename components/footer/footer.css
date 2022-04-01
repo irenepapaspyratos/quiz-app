@@ -7,8 +7,3 @@
 	background-color: var(--bgColor-accent);
 	padding: 1rem;
 }
-
-.nav {
-	display: flex;
-	justify-content: space-around;
-}

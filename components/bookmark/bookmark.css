@@ -1,0 +1,4 @@
+.bookmark {
+	color: var(--bgColor-accent);
+	fill: currentColor;
+}

@@ -1,29 +1,16 @@
-const book1 = document.querySelector('[data-js="badge1"]');
-const book2 = document.querySelector('[data-js="badge2"]');
+import Button from "./components/button/button.js"
+import Bookmark from "./components/bookmark/bookmark.js"
 
-const button1 = document.querySelector('[data-js="button1"]');
-const button2 = document.querySelector('[data-js="button2"]');
-
-const answer = document.querySelector('[data-js="answer"]');
-
-book1.addEventListener('click', () => {
-    book1.classList.toggle('hide');
-    book2.classList.toggle('hide');
+/* find ALL buttons of Quiz-App */
+const listButton = document.querySelectorAll('button');
+listButton.forEach ( element => {
+    element.addEventListener( 'click', () => {
+        Button(element);
+    }); 
 });
 
-book2.addEventListener('click', () => {
-    book2.classList.toggle('hide');
-    book1.classList.toggle('hide');
-});
-
-button1.addEventListener('click', () => {
-    button1.classList.toggle('hide');
-    button2.classList.toggle('hide');
-    answer.classList.toggle('hide');
-});
-
-button2.addEventListener('click', () => {
-    button1.classList.toggle('hide');
-    button2.classList.toggle('hide');
-    answer.classList.toggle('hide');
+/* find ALL cards of Quiz-App */
+const listCard = document.querySelectorAll('.card');
+listCard.forEach ( element => {
+    Bookmark(element);
 });

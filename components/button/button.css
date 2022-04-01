@@ -25,3 +25,18 @@
 .btn--form {
 	align-self: flex-end;
 }
+
+.btn--footer {
+	padding: 1rem;
+	background-image: none;
+	background-color: transparent;
+	color: black;
+	box-shadow: none;
+	border: none;
+	cursor: pointer;
+}
+
+.btn--footer:hover {
+	background-image: none;
+	color: var(--bgColor-main);
+}
