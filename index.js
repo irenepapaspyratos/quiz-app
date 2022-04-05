@@ -1,16 +1,17 @@
-import Button from "./components/button/button.js"
-import Bookmark from "./components/bookmark/bookmark.js"
+import Button from "./components/button/button.js";
+import { fetchApi, randomInt } from "./components/utility/utility.js";
+import Card from "./components/card/card.js";
 
-/* find ALL buttons of Quiz-App */
-const listButton = document.querySelectorAll('button');
-listButton.forEach ( element => {
-    element.addEventListener( 'click', () => {
-        Button(element);
-    }); 
-});
-
-/* find ALL cards of Quiz-App */
-const listCard = document.querySelectorAll('.card');
-listCard.forEach ( element => {
-    Bookmark(element);
-});
+/* get questions */
+const varApi = "https://opentdb.com/api.php?amount=" + randomInt(1000);
+fetchApi(varApi)
+	.then((array) => Card(array.results))
+	.then(() => {
+		/* find ALL buttons of Quiz-App */
+		const listButton = document.querySelectorAll("button");
+		listButton.forEach((element) => {
+			element.addEventListener("click", () => {
+				Button(element);
+			});
+		});
+	});
