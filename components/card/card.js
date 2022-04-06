@@ -1,10 +1,10 @@
 import Bookmark from "../bookmark/bookmark.js";
 import { randomInt } from "../utility/utility.js";
 
-export default async function Card(questionArray) {
+export default function Card(questionArray) {
 	const sectionHome = document.querySelector('[data-js="home"]');
 
-	await questionArray.forEach((qObj) => {
+	questionArray.forEach((qObj) => {
 		let question = qObj.question;
 		if (qObj.type === "multiple") {
 			const no = randomInt(qObj.incorrect_answers.length);
