@@ -1,5 +1,9 @@
 import Button from "./components/button/button.js";
-import { fetchApi, randomInt } from "./components/utility/utility.js";
+import {
+	fetchApi,
+	randomInt,
+	getLastStorageKey,
+} from "./components/utility/utility.js";
 import Card from "./components/card/card.js";
 
 /* get questions */
@@ -15,3 +19,5 @@ fetchApi(varApi)
 			});
 		});
 	});
+
+console.log(getLastStorageKey());

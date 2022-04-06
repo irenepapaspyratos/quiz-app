@@ -9,7 +9,7 @@ export default async function Card(questionArray) {
 		if (qObj.type === "multiple") {
 			const no = randomInt(qObj.incorrect_answers.length);
 			const choices = qObj.incorrect_answers.splice(no, 0, qObj.correct_answer);
-			let str = "";
+			let str = `<br> Choose the right answer: `;
 			qObj.incorrect_answers.forEach((choice) => {
 				str = `${str} <br> ${choice}`;
 			});
@@ -42,6 +42,7 @@ export default async function Card(questionArray) {
             <svg
                 class="bookmark hide"
                 data-js="badge"
+                type-js="marked"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
             >

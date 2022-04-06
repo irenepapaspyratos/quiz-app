@@ -2,7 +2,7 @@ export default function Bookmark(elementCard) {
 	const listBookmark = elementCard.querySelectorAll('[data-js="badge"]');
 
 	listBookmark.forEach((badge) => {
-		badge.addEventListener("click", () => {
+		badge.addEventListener("click", (badge) => {
 			listBookmark.forEach((badgeAgain) => {
 				badgeAgain.classList.toggle("hide");
 			});

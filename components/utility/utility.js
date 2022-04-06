@@ -14,3 +14,7 @@ export async function fetchApi(apiUrl) {
 		return output;
 	}
 }
+
+export function getLastStorageKey() {
+	return localStorage.length - 1;
+}
