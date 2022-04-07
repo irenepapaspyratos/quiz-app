@@ -1,0 +1,16 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  background-color: var(--bgColor-accent);
+  width: inherit;
+  padding: 1rem;
+  text-align: center;
+}
+
+.header__title {
+  font-size: 2rem;
+  font-family: 'Fugaz One', cursive;
+  font-variant: small-caps;
+  text-shadow: 0 0 0.6rem var(--bgColor-main);
+}

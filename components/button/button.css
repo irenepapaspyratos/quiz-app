@@ -1,0 +1,82 @@
+.btn {
+  background-image: linear-gradient(
+    rgb(126, 126, 126),
+    white,
+    white,
+    rgb(126, 126, 126)
+  );
+  margin-bottom: 1rem;
+  padding: 0.3rem;
+  border: 1px solid rgb(126, 126, 126);
+  border-radius: 0.2rem;
+  color: black;
+}
+
+.btn:hover {
+  font-weight: 700;
+  background-image: linear-gradient(
+    rgb(94, 94, 94),
+    white,
+    white,
+    rgb(94, 94, 94)
+  );
+}
+
+.btn--form {
+  align-self: flex-end;
+}
+
+.btn--footer {
+  padding: 1rem;
+  background-image: none;
+  background-color: transparent;
+  color: black;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn--footer:hover {
+  background-image: none;
+  color: var(--bgColor-main);
+}
+
+.btn--noBookmark {
+  width: 2.4rem;
+  height: 2.4rem;
+  background-color: #6a9acc;
+  background-image: none;
+  mask-image: url('../../images/bookmark_false.svg');
+  -webkit-mask-image: url('../../images/bookmark_false.svg');
+  color: black;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn--noBookmark:hover {
+  background-image: none;
+  mask-image: url('../../images/bookmark_false.svg');
+  -webkit-mask-image: url('../../images/bookmark_false.svg');
+  background-color: var(--bgColor-accent);
+}
+
+.btn--bookmark {
+  width: 2.4rem;
+  height: 2.4rem;
+  background-color: var(--bgColor-accent);
+  background-image: none;
+  mask-image: url('../../images/bookmark_true.svg');
+  -webkit-mask-image: url('../../images/bookmark_true.svg');
+  color: black;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn--bookmark:hover {
+  background-image: none;
+  mask-image: url('../../images/bookmark_true.svg');
+  -webkit-mask-image: url('../../images/bookmark_true.svg');
+  background-color: #6a9acc;
+}

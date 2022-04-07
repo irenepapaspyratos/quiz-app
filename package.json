@@ -1,0 +1,41 @@
+{
+  "name": "quiz-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run htmlhint && npm run prettier:write",
+    "htmlhint": "npx htmlhint '**/*.html'",
+    "prettier:check": "npx prettier --check .",
+    "prettier:write": "npx prettier --write .",
+    "stylelint": "npx stylelint \"**/*.css\"",
+    "eslint": "npx eslint \"**/*.js\"",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irenepapaspyratos/quiz-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/irenepapaspyratos/quiz-app/issues"
+  },
+  "homepage": "https://github.com/irenepapaspyratos/quiz-app#readme",
+  "devDependencies": {
+    "eslint": "^8.12.0",
+    "htmlint": "^0.0.7",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.7",
+    "prettier": "^2.6.2",
+    "stylelint": "^14.6.1",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-standard": "^25.0.0"
+  },
+  "dependencies": {
+    "commander": "^2.20.3",
+    "parse5": "^5.1.1",
+    "parse5-sax-parser": "^5.0.0"
+  },
+  "description": ""
+}
