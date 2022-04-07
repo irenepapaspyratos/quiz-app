@@ -1,12 +1,17 @@
 export default function Bookmark(elementCard) {
-	const listBookmark = elementCard.querySelectorAll('[data-js="badge"]');
+	const badge = elementCard.querySelector('[data-js="badge"]');
 
-	listBookmark.forEach((badge) => {
-		badge.addEventListener("click", (badge) => {
-			listBookmark.forEach((badgeAgain) => {
-				badgeAgain.classList.toggle("hide");
-			});
-		});
+	badge.addEventListener("click", () => {
+		console.log("test");
+		if (badge.classList.contains("btn--bookmark")) {
+			badge.classList.remove("btn--bookmark");
+			badge.classList.add("btn--noBookmark");
+			badge.setAttribute("title", "Save this question");
+		} else {
+			badge.classList.add("btn--bookmark");
+			badge.classList.remove("btn--noBookmark");
+			badge.setAttribute("title", "Unsave this question");
+		}
 	});
 }
 

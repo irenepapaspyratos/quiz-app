@@ -5,10 +5,13 @@ export default function Card(questionArray) {
 	const sectionHome = document.querySelector('[data-js="home"]');
 
 	questionArray.forEach((qObj) => {
+		/* Create question-string depending on type of question */
 		let question = qObj.question;
 		if (qObj.type === "multiple") {
+			/* Put right answer to random position of possible answers*/
 			const no = randomInt(qObj.incorrect_answers.length);
 			const choices = qObj.incorrect_answers.splice(no, 0, qObj.correct_answer);
+
 			let str = `<br> Choose the right answer: `;
 			qObj.incorrect_answers.forEach((choice) => {
 				str = `${str} <br> ${choice}`;
@@ -18,38 +21,19 @@ export default function Card(questionArray) {
 			question = `${qObj.question} <br><br> True or False ?`;
 		}
 
-		let tagList = [`<div class="card__tag">${qObj.difficulty}</div>`];
-		qObj.category.split(": ").forEach((part) => {
-			tagList = tagList + `<div class="card__tag">${part}</div>`;
-		});
+		/* Create tag-list from difficulty and category(key seperated from value) 
+        `<div class="card__tag">${qObj.difficulty}</div>`*/
+		let tagList = qObj.category.split(": ").map((part) => part);
+		tagList.push(qObj.difficulty);
 
 		/* if data is already in localStorage, put filled Bookmark */
 
+		/* Create necessary HTML for a question-card */
 		const cardArticle = document.createElement("article");
 		cardArticle.classList.add("card");
 		cardArticle.innerHTML = `
         <div class="card__bookmark">
-            <svg
-                class="bookmark"
-                data-js="badge"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-            >
-                <path
-                    d="M16 10.975v13.025l-6-5.269-6 5.269v-24h6.816c-.553.576-1.004 1.251-1.316 2h-3.5v17.582l4-3.512 4 3.512v-8.763c.805.19 1.379.203 2 .156zm4-6.475c0 2.485-2.018 4.5-4.5 4.5-2.484 0-4.5-2.015-4.5-4.5s2.016-4.5 4.5-4.5c2.482 0 4.5 2.015 4.5 4.5zm-2-.5h-2v-2h-1v2h-2v1h2v2h1v-2h2v-1z"
-                />
-            </svg>
-            <svg
-                class="bookmark hide"
-                data-js="badge"
-                type-js="marked"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-            >
-                <path
-                    d="M16 10.975v13.025l-6-5.269-6 5.269v-24h6.816c-1.123 1.168-1.816 2.752-1.816 4.5 0 3.736 3.162 6.768 7 6.475zm4-6.475c0 2.485-2.018 4.5-4.5 4.5-2.484 0-4.5-2.015-4.5-4.5s2.016-4.5 4.5-4.5c2.482 0 4.5 2.015 4.5 4.5zm-2-.5h-5v1h5v-1z"
-                />
-            </svg>
+        <button class="btn btn--noBookmark" data-js="badge" title="Save this question"></button>
         </div>
         <h2 class="card__title">Question</h2>
         <div class="card__body">
@@ -65,7 +49,9 @@ export default function Card(questionArray) {
             </div>
         </div>
         <div class="card__footer">
+        <ul>
             ${tagList}
+            </ul>
         </div>
     `;
 

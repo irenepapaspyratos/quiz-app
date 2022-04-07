@@ -40,3 +40,43 @@
 	background-image: none;
 	color: var(--bgColor-main);
 }
+
+.btn--bookmark {
+	width: 2.4rem;
+	height: 2.4rem;
+	background-color: var(--bgColor-accent);
+	background-image: none;
+	mask-image: url('../../images/bookmark_true.svg');
+	-webkit-mask-image: url('../../images/bookmark_true.svg');
+	color: black;
+	box-shadow: none;
+	border: none;
+	cursor: pointer;
+}
+
+.btn--bookmark:hover {
+	background-image: none;
+	mask-image: url('../../images/bookmark_true.svg');
+	-webkit-mask-image: url('../../images/bookmark_true.svg');
+	background-color: #6a9acc;
+}
+
+.btn--noBookmark {
+	width: 2.4rem;
+	height: 2.4rem;
+	background-color: #6a9acc;
+	background-image: none;
+	mask-image: url('../../images/bookmark_false.svg');
+	-webkit-mask-image: url('../../images/bookmark_false.svg');
+	color: black;
+	box-shadow: none;
+	border: none;
+	cursor: pointer;
+}
+
+.btn--noBookmark:hover {
+	background-image: none;
+	mask-image: url('../../images/bookmark_false.svg');
+	-webkit-mask-image: url('../../images/bookmark_false.svg');
+	background-color: var(--bgColor-accent);
+}

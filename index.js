@@ -21,3 +21,5 @@ fetchApi(varApi)
 	});
 
 console.log(getLastStorageKey());
+let x = getLastStorageKey() + 1;
+console.log(x);
