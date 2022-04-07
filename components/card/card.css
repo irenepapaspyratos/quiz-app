@@ -1,41 +1,41 @@
 .card {
-	position: relative;
-	width: 75%;
-	margin: 2rem auto;
-	padding: 1rem;
-	border: 1px solid black;
-	border-radius: 0.6rem;
-	background-color: white;
-	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-		"Lucida Sans", Arial, sans-serif;
+  position: relative;
+  width: 75%;
+  margin: 2rem auto;
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 0.6rem;
+  background-color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
 }
 
 .card__bookmark {
-	position: absolute;
-	width: 2.4rem;
-	height: 2.4rem;
-	top: -0.2rem;
-	right: 0.2rem;
+  position: absolute;
+  width: 2.4rem;
+  height: 2.4rem;
+  top: -0.2rem;
+  right: 0.2rem;
 }
 
 .card__title {
-	margin-bottom: 0.5rem;
-	font-size: 1.3rem;
-	font-style: italic;
-	text-align: left;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  font-style: italic;
+  text-align: left;
 }
 
 .card__text {
-	margin: 0 1rem 1rem 1rem;
+  margin: 0 1rem 1rem 1rem;
 }
 
 .card__text--answer {
-	font-style: italic;
+  font-style: italic;
 }
 
 .card__footer {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
 }

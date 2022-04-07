@@ -1,9 +1,9 @@
 .footer {
-	position: sticky;
-	bottom: 0;
-	z-index: 99;
-	width: 100%;
-	max-width: 500px;
-	background-color: var(--bgColor-accent);
-	padding: 1rem;
+  position: sticky;
+  bottom: 0;
+  z-index: 99;
+  width: 100%;
+  max-width: 500px;
+  background-color: var(--bgColor-accent);
+  padding: 1rem;
 }

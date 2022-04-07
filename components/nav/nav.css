@@ -1,13 +1,13 @@
 .nav__ul {
-	list-style: none;
-	display: flex;
-	justify-content: space-around;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
 }
 
 .nav__icon {
-	width: 1.8rem;
-	height: 1.8rem;
-	color: inherit;
-	background-image: transparent;
-	_box-shadow: 0 0 1rem white;
+  width: 1.8rem;
+  height: 1.8rem;
+  color: inherit;
+  background-image: transparent;
+  _box-shadow: 0 0 1rem white;
 }
